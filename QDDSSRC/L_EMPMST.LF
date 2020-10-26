@@ -1,0 +1,3 @@
+                R P_EMPMSTA                 PFILE(P_EMPMST)
+                K EM_NUM
+                S EM_ACTIVE                 COMP(EQ '1')

@@ -1,0 +1,19 @@
+                                            UNIQUE
+                R P_EMPMSTA
+                  EM_NUM        10S 0       TEXT('EMPLOYEE NUMBER')
+                  EM_FNAME      30A         TEXT('FIRST NAME')
+                  EM_LNAME      30A         TEXT('LAST NAME')
+                  EM_MNAME      30A         TEXT('MIDDLE NAME')
+                  EM_DOB          L         TEXT('DATE OF BIRTH')
+                  EM_ADDR1      60A         TEXT('ADDRESS LINE 1')
+                  EM_ADDR2      60A         TEXT('ADDRESS LINE 2')
+                  EM_ADDR3      60A         TEXT('ADDRESS LINE 3')
+                  EM_CITY       50A         TEXT('CITY')
+                  EM_STATE      50A         TEXT('STATE')
+                  EM_CNTRY      50A         TEXT('COUNTRY')
+                  EM_EMAILH     80A         TEXT('HOME EMAIL')
+                  EM_EMAILW     80A         TEXT('WORK EMAIL')
+                  EM_PHONEH     10S 0       TEXT('HOME PHONE')
+                  EM_PHONEW     10S 0       TEXT('WORK PHONE')
+                  EM_ACTIVE      1A         TEXT('EMPLOYEE ACTIVE')
+                K EM_NUM
