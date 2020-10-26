@@ -1,0 +1,51 @@
+     A*%%TS  SD  20201012  161527  CECUSER     REL-V7R3M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R EMPSFL                    SFL
+     A*%%TS  SD  20201012  161527  CECUSER     REL-V7R3M0  5770-WDS
+     A            S1_OPT         1A  I  8  3
+     A            S1_NUM        10Y 0O  8  6EDTCDE(4)
+     A            S1_NAM        30A  O  8 17
+     A            S1_PHN        13A  O  8 48
+     A            S1_EML        18A  O  8 62
+     A          R EMPCTL                    SFLCTL(EMPSFL)
+     A                                      OVERLAY
+     A*%%TS  SD  20201012  160945  CECUSER     REL-V7R3M0  5770-WDS
+     A                                      CA03(03 'EXIT')
+     A                                      CA12(12 'CANCEL')
+     A  71                                  SFLDSP
+     A  72                                  SFLDSPCTL
+     A  73                                  SFLCLR
+     A  74                                  SFLEND(*MORE)
+     A                                      SFLSIZ(0080)
+     A                                      SFLPAG(0012)
+     A                                  1  2SYSNAME
+     A                                  1 31'PIO DEMO APPLICATION'
+     A                                  1 72DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2USER
+     A                                  2 33'Employee Master'
+     A                                  2 72TIME
+     A                                  5  2'1=Select'
+     A                                      COLOR(BLU)
+     A                                  6  2'Opt'
+     A                                      DSPATR(HI)
+     A                                  6  6'Emp_Num'
+     A                                      DSPATR(HI)
+     A                                  6 17'Name'
+     A                                      DSPATR(HI)
+     A                                  6 48'Phone'
+     A                                      DSPATR(HI)
+     A                                  6 62'Email'
+     A                                      DSPATR(HI)
+     A                                  7  2'--- ---------- --------------------
+     A                                      ----------- ------------- ----------
+     A                                      ---------'
+     A          R EMPFOT
+     A*%%TS  SD  20201012  160945  CECUSER     REL-V7R3M0  5770-WDS
+     A                                 21  2'-----------------------------------
+     A                                      ------------------------------------
+     A                                      --------'
+     A                                 23  2'F3=Exit  F12=Cancel'
+     A                                      COLOR(BLU)
+     A            S3_MSG        60A  O 24  2DSPATR(HI)
